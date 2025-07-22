@@ -11,6 +11,7 @@ import Trips from './pages/Trips'
 import Review from './pages/Review'
 import Forums from './pages/Forums'
 import Contributors from './pages/Contributors'
+import AuthPage from "./components/auth/UserAuth";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
       { path: '/review', element: <Review /> },
       { path: '/forums', element: <Forums /> },
       { path: '/contributors', element: <Contributors /> },
+      { path: '/auth/login', element: <AuthPage /> },
+
     ],
   },
 ])
